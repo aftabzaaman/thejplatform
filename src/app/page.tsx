@@ -73,6 +73,33 @@ const CATEGORIES = {
     ],
     unit: "Tons",
     minQty: 15,
+  },
+  Chemicals: {
+    products: [
+      { name: "Hydrogen Peroxide (50%)", specs: "Industrial grade bleaching agent for RMG wash", price: 68 },
+      { name: "Caustic Soda Flakes (99%)", specs: "High purity sodium hydroxide for industrial cleaning", price: 95 },
+      { name: "Citric Acid Anhydrous", specs: "Acidity regulator for beverage & detergents", price: 145 }
+    ],
+    unit: "Kgs",
+    minQty: 1000,
+  },
+  Packaging: {
+    products: [
+      { name: "Kraft Liner Paper (150 GSM)", specs: "High burst factor paper for corrugated cartons", price: 82000 },
+      { name: "Duplex Board Grey Back (300 GSM)", specs: "Coated board for FMCG & pharma box printing", price: 74000 },
+      { name: "Fluting Paper Roll (120 GSM)", specs: "Medium fluting paper for corrugated boxes", price: 68000 }
+    ],
+    unit: "Tons",
+    minQty: 2,
+  },
+  Electrical: {
+    products: [
+      { name: "Distribution Transformer 250kVA", specs: "11kV/0.4kV oil-immersed substation transformer", price: 420000 },
+      { name: "Industrial HT Switchgear Panel", specs: "Vacuum circuit breaker protection panel for factories", price: 850000 },
+      { name: "3-Phase Induction Motor 15HP", specs: "Heavy duty motor for blower & pump drives", price: 85000 }
+    ],
+    unit: "Pcs",
+    minQty: 2,
   }
 };
 
