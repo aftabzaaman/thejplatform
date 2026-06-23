@@ -40,63 +40,147 @@ interface Order {
 const CATEGORIES = {
   Steel: {
     products: [
-      { name: "BSRM 60G Deformed Bar (10mm)", specs: "High-strength TMT reinforcement bar", price: 94000 },
-      { name: "AKS TMT Bar (12mm)", specs: "Thermo-mechanically treated bar", price: 93000 },
-      { name: "GPH Quantum Steel (16mm)", specs: "State-of-the-art structure steel", price: 95500 }
+      { name: "BSRM 60G Deformed Bar (10mm)", specs: "High-strength TMT reinforcement bar for heavy foundations", price: 94000, image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=400&auto=format&fit=crop&q=60" },
+      { name: "AKS TMT Bar (12mm)", specs: "Thermo-mechanically treated bar with superior bonding", price: 93000, image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=400&auto=format&fit=crop&q=60" },
+      { name: "GPH Quantum Steel (16mm)", specs: "State-of-the-art structural rebar with high ductility", price: 95500, image: "https://images.unsplash.com/photo-1534224039826-c7a0dea0e66a?w=400&auto=format&fit=crop&q=60" },
+      { name: "KSRM TMT Bar (20mm)", specs: "Premium Grade TMT bar designed for high-rise projects", price: 92500, image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=400&auto=format&fit=crop&q=60" },
+      { name: "Anwar Galvanized GI Pipe (2 inch)", specs: "Corrosion resistant hot-dipped galvanized utility pipe", price: 115000, image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=400&auto=format&fit=crop&q=60" },
+      { name: "MS Angle Bar (50mm x 50mm)", specs: "Mild steel structural angle for truss fabrication", price: 88000, image: "https://images.unsplash.com/photo-1534224039826-c7a0dea0e66a?w=400&auto=format&fit=crop&q=60" },
+      { name: "MS Flat Bar (25mm x 5mm)", specs: "Solid mild steel flat sections for industrial gratings", price: 89000, image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=400&auto=format&fit=crop&q=60" },
+      { name: "Cold Rolled Sheet Coil (1.2mm)", specs: "High finish CR sheet coil for auto & appliance parts", price: 120000, image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=400&auto=format&fit=crop&q=60" },
+      { name: "Hot Rolled Sheet Coil (3.0mm)", specs: "Structural grade hot rolled steel sheet in coil format", price: 105000, image: "https://images.unsplash.com/photo-1534224039826-c7a0dea0e66a?w=400&auto=format&fit=crop&q=60" },
+      { name: "Galvanized Corrugated Sheet (0.36mm)", specs: "Premium zinc coated roofing sheet for factory sheds", price: 130000, image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=400&auto=format&fit=crop&q=60" },
+      { name: "H-Beam Structural Steel (150x150)", specs: "Wide flange H-sections for heavy civil engineering", price: 98000, image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=400&auto=format&fit=crop&q=60" },
+      { name: "I-Beam Structural Steel (200x100)", specs: "Standard I-sections for bridges and crane runways", price: 97500, image: "https://images.unsplash.com/photo-1534224039826-c7a0dea0e66a?w=400&auto=format&fit=crop&q=60" },
+      { name: "MS Square Pipe (50mm x 50mm)", specs: "Hollow structural steel square tubing for framing", price: 92000, image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=400&auto=format&fit=crop&q=60" },
+      { name: "MS Round Channel (100mm)", specs: "Structural C-channel sections for heavy machinery supports", price: 91000, image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=400&auto=format&fit=crop&q=60" },
+      { name: "High Tensile PC Wire (5mm)", specs: "Prestressed concrete steel wire for electric poles", price: 118000, image: "https://images.unsplash.com/photo-1534224039826-c7a0dea0e66a?w=400&auto=format&fit=crop&q=60" }
     ],
     unit: "Tons",
     minQty: 10,
   },
   Cement: {
     products: [
-      { name: "Shah Cement Special (OPC)", specs: "Ordinary Portland Cement for heavy structures", price: 530 },
-      { name: "Bashundhara Cement (PCC)", specs: "Portland Composite Cement for general masonry", price: 510 },
-      { name: "Seven Rings Gold (OPC)", specs: "Premium grade high early strength cement", price: 545 }
+      { name: "Shah Cement Special (OPC)", specs: "Ordinary Portland Cement for heavy casting and columns", price: 530, image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=400&auto=format&fit=crop&q=60" },
+      { name: "Bashundhara Cement (PCC)", specs: "Portland Composite Cement for general brickwork and plastering", price: 510, image: "https://images.unsplash.com/photo-1590069261209-f8e9b8642343?w=400&auto=format&fit=crop&q=60" },
+      { name: "Seven Rings Gold (OPC)", specs: "Premium grade high early strength cement for fast tracking", price: 545, image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=400&auto=format&fit=crop&q=60" },
+      { name: "Fresh Cement Premium (PCC)", specs: "Highly durable composite cement with fly-ash formula", price: 505, image: "https://images.unsplash.com/photo-1590069261209-f8e9b8642343?w=400&auto=format&fit=crop&q=60" },
+      { name: "Lafarge Holcim Strong Structure (PCC)", specs: "Engineered composite cement with damp-lock shield", price: 515, image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=400&auto=format&fit=crop&q=60" },
+      { name: "Premier Cement Special (OPC)", specs: "High performance cement for bridge decks & flyovers", price: 525, image: "https://images.unsplash.com/photo-1590069261209-f8e9b8642343?w=400&auto=format&fit=crop&q=60" },
+      { name: "Crown Cement Concrete (PCC)", specs: "General construction composite cement with low hydration heat", price: 500, image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=400&auto=format&fit=crop&q=60" },
+      { name: "Akij Cement Strong (OPC)", specs: "Premium pure clinker cement for massive civil foundation", price: 535, image: "https://images.unsplash.com/photo-1590069261209-f8e9b8642343?w=400&auto=format&fit=crop&q=60" },
+      { name: "Heidelberg Scan Cement (PCC)", specs: "Reliable structural composite cement for slab casting", price: 520, image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=400&auto=format&fit=crop&q=60" },
+      { name: "MI Cement Super (PCC)", specs: "Standard masonry cement for high strength structural blocks", price: 510, image: "https://images.unsplash.com/photo-1590069261209-f8e9b8642343?w=400&auto=format&fit=crop&q=60" },
+      { name: "Diamond Cement (PCC)", specs: "General-purpose composite cement for regional constructions", price: 495, image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=400&auto=format&fit=crop&q=60" },
+      { name: "Confidence Cement (OPC)", specs: "High early strength ordinary cement for precast girder units", price: 540, image: "https://images.unsplash.com/photo-1590069261209-f8e9b8642343?w=400&auto=format&fit=crop&q=60" },
+      { name: "Anwar Cement Special (PCC)", specs: "Composite cement with enhanced silica particles for longevity", price: 505, image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=400&auto=format&fit=crop&q=60" },
+      { name: "Sena Cement Premium (PCC)", specs: "Durable composite formulation for coastal structures", price: 500, image: "https://images.unsplash.com/photo-1590069261209-f8e9b8642343?w=400&auto=format&fit=crop&q=60" },
+      { name: "Mongla Cement (PCC)", specs: "Cost effective plastering and civil works composite cement", price: 490, image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=400&auto=format&fit=crop&q=60" }
     ],
     unit: "Bags",
     minQty: 500,
   },
   Textile: {
     products: [
-      { name: "100% Cotton Yarn (30/1 Carded)", specs: "Ring-spun knitting yarn for RMG", price: 420 },
-      { name: "Polyester Single Jersey Fabric", specs: "Dyed knit fabric (160 GSM)", price: 380 },
-      { name: "Cotton Canvas Heavy GSM", specs: "Durable woven canvas fabric", price: 650 }
+      { name: "100% Cotton Yarn (30/1 Carded)", specs: "Ring-spun combed yarn for export-quality knit garments", price: 420, image: "https://images.unsplash.com/photo-1606225457115-9b0de873c5db?w=400&auto=format&fit=crop&q=60" },
+      { name: "Polyester Single Jersey Fabric", specs: "Dyed knit single jersey fabric (160 GSM) for activewear", price: 380, image: "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?w=400&auto=format&fit=crop&q=60" },
+      { name: "Cotton Canvas Heavy GSM", specs: "Heavy duty woven canvas fabric for bags and workwear", price: 650, image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&auto=format&fit=crop&q=60" },
+      { name: "TC Fleece Fabric (Brush back)", specs: "Cotton-polyester blend fleece for winter sweatshirts", price: 480, image: "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?w=400&auto=format&fit=crop&q=60" },
+      { name: "Cotton Rib Fabric (2x2 Lycra)", specs: "Spandex-blended rib fabric for garment cuffs and collars", price: 520, image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&auto=format&fit=crop&q=60" },
+      { name: "Cotton Pique Fabric (Lacoste)", specs: "Classic pique knit fabric for high-end polo shirt production", price: 490, image: "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?w=400&auto=format&fit=crop&q=60" },
+      { name: "100% Polyester Interlock Fabric", specs: "Fine gauge interlock fabric for sublimation and sportswear", price: 340, image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&auto=format&fit=crop&q=60" },
+      { name: "Cotton Twill Fabric (10 Oz)", specs: "Rugged diagonal-weave cotton twill for pants and jackets", price: 580, image: "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?w=400&auto=format&fit=crop&q=60" },
+      { name: "Denim Fabric (12 Oz Indigo)", specs: "Classic indigo dyed cotton denim for jeans manufacturing", price: 720, image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&auto=format&fit=crop&q=60" },
+      { name: "Viscose Spandex Single Jersey", specs: "Soft drape viscose knit fabric with high stretch recovery", price: 560, image: "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?w=400&auto=format&fit=crop&q=60" },
+      { name: "Nylon Taffeta Fabric", specs: "Waterproof synthetic taffeta for windbreaker jacket lining", price: 290, image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&auto=format&fit=crop&q=60" },
+      { name: "Melange Cotton Yarn (32/1 Knit)", specs: "Dual-tone blended cotton yarn for fashion knitwear", price: 460, image: "https://images.unsplash.com/photo-1606225457115-9b0de873c5db?w=400&auto=format&fit=crop&q=60" },
+      { name: "Acrylic Sweater Yarn (2/28 NM)", specs: "Wool-like synthetic yarn for automated sweater knitting", price: 390, image: "https://images.unsplash.com/photo-1606225457115-9b0de873c5db?w=400&auto=format&fit=crop&q=60" },
+      { name: "Sewing Thread Cones (40/2)", specs: "High-speed polyester core-spun thread for stitching lines", price: 85, image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&auto=format&fit=crop&q=60" },
+      { name: "Polyester Button Accents (Bulk)", specs: "Standard 4-hole round shirt buttons in bulk crates", price: 45, image: "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?w=400&auto=format&fit=crop&q=60" }
     ],
     unit: "Kgs",
     minQty: 1000,
   },
   Agro: {
     products: [
-      { name: "Non-Basmati Rice (Miniket)", specs: "Auto-milled polished parboiled rice", price: 62000 },
-      { name: "Yellow Maize/Corn Feed Grade", specs: "High energy animal feed grain", price: 32000 },
-      { name: "Premium Quality Soymeal", specs: "High protein solvent-extracted meal", price: 68000 }
+      { name: "Non-Basmati Rice (Miniket)", specs: "Double polished premium parboiled grain for bulk retail packaging", price: 62000, image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=400&auto=format&fit=crop&q=60" },
+      { name: "Yellow Maize/Corn Feed Grade", specs: "High energy animal feed grain with low moisture content", price: 32000, image: "https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?w=400&auto=format&fit=crop&q=60" },
+      { name: "Premium Quality Soymeal", specs: "High protein solvent-extracted dehulled soybean meal", price: 68000, image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=400&auto=format&fit=crop&q=60" },
+      { name: "Mustard Seed Cake (Oilcake)", specs: "Organic oil-extracted meal for premium cattle feed mixing", price: 42000, image: "https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?w=400&auto=format&fit=crop&q=60" },
+      { name: "Wheat Flour (Atta) Bulk", specs: "Automated roller milled wheat flour for commercial bakeries", price: 48000, image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=400&auto=format&fit=crop&q=60" },
+      { name: "Fine Semolina (Suji) Bulk", specs: "High gluten hard wheat semolina for industrial food manufacturing", price: 52000, image: "https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?w=400&auto=format&fit=crop&q=60" },
+      { name: "Rice Bran Oil (Crude)", specs: "Unrefined solvent extracted oil for refining factories", price: 145000, image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=400&auto=format&fit=crop&q=60" },
+      { name: "Red Lentils (Masur Dal)", specs: "Cleaned and sorted split red lentils import quality", price: 110000, image: "https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?w=400&auto=format&fit=crop&q=60" },
+      { name: "Chickpeas (Chola) Bulk", specs: "Whole dried raw chickpeas for wholesale trading distribution", price: 85000, image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=400&auto=format&fit=crop&q=60" },
+      { name: "Coriander Seeds Whole", specs: "Sun dried premium spice coriander seeds whole format", price: 165000, image: "https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?w=400&auto=format&fit=crop&q=60" },
+      { name: "Dry Whole Red Chili", specs: "High pungency stemless dry red pepper for spice mills", price: 280000, image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=400&auto=format&fit=crop&q=60" },
+      { name: "Refined Sugar (Bulk)", specs: "Pure white cane sugar in commercial packing bags", price: 125000, image: "https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?w=400&auto=format&fit=crop&q=60" },
+      { name: "Feed Grade Di-calcium Phosphate", specs: "Mineral supplement additive for poultry and cattle feeds", price: 72000, image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=400&auto=format&fit=crop&q=60" },
+      { name: "Fish Meal Protein Concentrate", specs: "Steam dried low fat fish meal powder for aqua feed industries", price: 95000, image: "https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?w=400&auto=format&fit=crop&q=60" },
+      { name: "Sesame Seed White", specs: "Premium natural white sesame seeds sorted for bakery exports", price: 180000, image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=400&auto=format&fit=crop&q=60" }
     ],
     unit: "Tons",
     minQty: 15,
   },
   Chemicals: {
     products: [
-      { name: "Hydrogen Peroxide (50%)", specs: "Industrial grade bleaching agent for RMG wash", price: 68 },
-      { name: "Caustic Soda Flakes (99%)", specs: "High purity sodium hydroxide for industrial cleaning", price: 95 },
-      { name: "Citric Acid Anhydrous", specs: "Acidity regulator for beverage & detergents", price: 145 }
+      { name: "Hydrogen Peroxide (50%)", specs: "Industrial grade bleaching agent for RMG wash", price: 68, image: "https://images.unsplash.com/photo-1603126857599-f6e157fa2fe6?w=400&auto=format&fit=crop&q=60" },
+      { name: "Caustic Soda Flakes (99%)", specs: "High purity sodium hydroxide for industrial cleaning", price: 95, image: "https://images.unsplash.com/photo-1532187863486-abf9d39d66e8?w=400&auto=format&fit=crop&q=60" },
+      { name: "Citric Acid Anhydrous", specs: "Acidity regulator for beverage & detergents", price: 145, image: "https://images.unsplash.com/photo-1603126857599-f6e157fa2fe6?w=400&auto=format&fit=crop&q=60" },
+      { name: "Acetic Acid (Glacial 99%)", specs: "Pure organic acid for printing dying and pH regulator", price: 110, image: "https://images.unsplash.com/photo-1532187863486-abf9d39d66e8?w=400&auto=format&fit=crop&q=60" },
+      { name: "Sodium Sulphate Anhydrous", specs: "Dyeing auxiliary and levelling agent for textile coloration", price: 38, image: "https://images.unsplash.com/photo-1603126857599-f6e157fa2fe6?w=400&auto=format&fit=crop&q=60" },
+      { name: "Soda Ash Light", specs: "Sodium carbonate builder for laundry powder synthesis", price: 48, image: "https://images.unsplash.com/photo-1532187863486-abf9d39d66e8?w=400&auto=format&fit=crop&q=60" },
+      { name: "Liquid Chlorine (Cylinder)", specs: "Compressed chlorine gas for water treatment plants", price: 120, image: "https://images.unsplash.com/photo-1603126857599-f6e157fa2fe6?w=400&auto=format&fit=crop&q=60" },
+      { name: "Hydrochloric Acid (35%)", specs: "Industrial grade muriatic acid for metal pickling processes", price: 28, image: "https://images.unsplash.com/photo-1532187863486-abf9d39d66e8?w=400&auto=format&fit=crop&q=60" },
+      { name: "Nitric Acid (68%)", specs: "Strong mineral acid for fertilizer and plating manufacturing", price: 55, image: "https://images.unsplash.com/photo-1603126857599-f6e157fa2fe6?w=400&auto=format&fit=crop&q=60" },
+      { name: "Glycerine USP Grade", specs: "99.5% pure vegetable glycerine for cosmetics formulation", price: 180, image: "https://images.unsplash.com/photo-1532187863486-abf9d39d66e8?w=400&auto=format&fit=crop&q=60" },
+      { name: "Methanol Industrial Grade", specs: "High purity chemical solvent and feedstock chemical", price: 72, image: "https://images.unsplash.com/photo-1603126857599-f6e157fa2fe6?w=400&auto=format&fit=crop&q=60" },
+      { name: "Formalin (37% Solution)", specs: "Stabilized industrial preservative and disinfectant chemical", price: 45, image: "https://images.unsplash.com/photo-1532187863486-abf9d39d66e8?w=400&auto=format&fit=crop&q=60" },
+      { name: "Bleaching Powder (35% Chlorine)", specs: "Calcium hypochlorite powder for floor sanitation", price: 85, image: "https://images.unsplash.com/photo-1603126857599-f6e157fa2fe6?w=400&auto=format&fit=crop&q=60" },
+      { name: "Alum (Fitkari) Crystals", specs: "Aluminum sulfate hydrate for primary effluent treatment plants", price: 32, image: "https://images.unsplash.com/photo-1532187863486-abf9d39d66e8?w=400&auto=format&fit=crop&q=60" },
+      { name: "Phosphoric Acid (85% Food)", specs: "Food grade ortho-phosphoric acid for soft drink industries", price: 165, image: "https://images.unsplash.com/photo-1603126857599-f6e157fa2fe6?w=400&auto=format&fit=crop&q=60" }
     ],
     unit: "Kgs",
     minQty: 1000,
   },
   Packaging: {
     products: [
-      { name: "Kraft Liner Paper (150 GSM)", specs: "High burst factor paper for corrugated cartons", price: 82000 },
-      { name: "Duplex Board Grey Back (300 GSM)", specs: "Coated board for FMCG & pharma box printing", price: 74000 },
-      { name: "Fluting Paper Roll (120 GSM)", specs: "Medium fluting paper for corrugated boxes", price: 68000 }
+      { name: "Kraft Liner Paper (150 GSM)", specs: "High burst factor paper for corrugated cartons", price: 82000, image: "https://images.unsplash.com/photo-1595079676339-1534801ad6cf?w=400&auto=format&fit=crop&q=60" },
+      { name: "Duplex Board Grey Back (300 GSM)", specs: "Coated board for FMCG & pharma box printing", price: 74000, image: "https://images.unsplash.com/photo-1512909006721-3d6018887383?w=400&auto=format&fit=crop&q=60" },
+      { name: "Fluting Paper Roll (120 GSM)", specs: "Medium fluting paper for corrugated boxes", price: 68000, image: "https://images.unsplash.com/photo-1595079676339-1534801ad6cf?w=400&auto=format&fit=crop&q=60" },
+      { name: "Test Liner Paper (140 GSM)", specs: "Sized recycled test liner paper for outer carton ply", price: 78000, image: "https://images.unsplash.com/photo-1512909006721-3d6018887383?w=400&auto=format&fit=crop&q=60" },
+      { name: "Art Paper Double Coated (150 GSM)", specs: "Premium glossy art paper for brochures and calendars", price: 115000, image: "https://images.unsplash.com/photo-1595079676339-1534801ad6cf?w=400&auto=format&fit=crop&q=60" },
+      { name: "Art Card Glossy (300 GSM)", specs: "Stiff coated art board for retail packaging boxes", price: 125000, image: "https://images.unsplash.com/photo-1512909006721-3d6018887383?w=400&auto=format&fit=crop&q=60" },
+      { name: "White Kraft Paper Roll (80 GSM)", specs: "Bleached strong kraft paper for food bag production", price: 95000, image: "https://images.unsplash.com/photo-1595079676339-1534801ad6cf?w=400&auto=format&fit=crop&q=60" },
+      { name: "Corrugated Sheet 3-Ply", specs: "Double-face corrugated boards cut to dimensions in tons", price: 45000, image: "https://images.unsplash.com/photo-1512909006721-3d6018887383?w=400&auto=format&fit=crop&q=60" },
+      { name: "Corrugated Sheet 5-Ply", specs: "Heavy duty shipping carton structural raw sheet material", price: 55000, image: "https://images.unsplash.com/photo-1595079676339-1534801ad6cf?w=400&auto=format&fit=crop&q=60" },
+      { name: "Stretch Wrap Film Roll", specs: "Linear low-density polyethylene LLDPE pallet wrapping film", price: 165000, image: "https://images.unsplash.com/photo-1512909006721-3d6018887383?w=400&auto=format&fit=crop&q=60" },
+      { name: "PP Strapping Band Roll", specs: "High tensile polypropylene box strapping roll for cargo", price: 135000, image: "https://images.unsplash.com/photo-1595079676339-1534801ad6cf?w=400&auto=format&fit=crop&q=60" },
+      { name: "Self Adhesive BOPP Tape", specs: "Industrial grade carton sealing tape roll batch orders", price: 140000, image: "https://images.unsplash.com/photo-1512909006721-3d6018887383?w=400&auto=format&fit=crop&q=60" },
+      { name: "Bubble Wrap Cushioning Roll", specs: "Shock absorbent polyethylene bubble packaging roll material", price: 98000, image: "https://images.unsplash.com/photo-1595079676339-1534801ad6cf?w=400&auto=format&fit=crop&q=60" },
+      { name: "Sack Kraft Paper Clupak", specs: "Extensible micro-creped paper for cement bag factories", price: 88000, image: "https://images.unsplash.com/photo-1512909006721-3d6018887383?w=400&auto=format&fit=crop&q=60" },
+      { name: "Semi-Chemical Fluting Paper", specs: "High compression strength corrugating medium fluting", price: 72000, image: "https://images.unsplash.com/photo-1595079676339-1534801ad6cf?w=400&auto=format&fit=crop&q=60" }
     ],
     unit: "Tons",
     minQty: 2,
   },
   Electrical: {
     products: [
-      { name: "Distribution Transformer 250kVA", specs: "11kV/0.4kV oil-immersed substation transformer", price: 420000 },
-      { name: "Industrial HT Switchgear Panel", specs: "Vacuum circuit breaker protection panel for factories", price: 850000 },
-      { name: "3-Phase Induction Motor 15HP", specs: "Heavy duty motor for blower & pump drives", price: 85000 }
+      { name: "Distribution Transformer 250kVA", specs: "11kV/0.4kV oil-immersed substation transformer", price: 420000, image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&auto=format&fit=crop&q=60" },
+      { name: "Industrial HT Switchgear Panel", specs: "Vacuum circuit breaker protection panel for factories", price: 850000, image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=400&auto=format&fit=crop&q=60" },
+      { name: "3-Phase Induction Motor 15HP", specs: "Heavy duty motor for blower & pump drives", price: 85000, image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&auto=format&fit=crop&q=60" },
+      { name: "NYY Cable 4-Core 16rm", specs: "Heavy duty copper conductor cable for industrial wiring", price: 1850, image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=400&auto=format&fit=crop&q=60" },
+      { name: "Distribution Transformer 500kVA", specs: "Three phase oil insulated electric substation transformer", price: 650000, image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&auto=format&fit=crop&q=60" },
+      { name: "LT Switchgear Panel (Incoming)", specs: "Main low tension distribution switchboard panels for factories", price: 450000, image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=400&auto=format&fit=crop&q=60" },
+      { name: "PFI Plant Panel 100kVAR", specs: "Power factor improvement capacitor bank panel", price: 220000, image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&auto=format&fit=crop&q=60" },
+      { name: "BYA Cable Single Core 2.5rm", specs: "PVC insulated single core electrical conduit building wire", price: 45, image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=400&auto=format&fit=crop&q=60" },
+      { name: "BYA Cable Single Core 4.0rm", specs: "PVC copper conductor wire for industrial power plug circuits", price: 68, image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&auto=format&fit=crop&q=60" },
+      { name: "LED High Bay Light 150W", specs: "High luminosity hanging lamp for factory shed lighting", price: 6500, image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=400&auto=format&fit=crop&q=60" },
+      { name: "Industrial Exhaust Fan (24 inch)", specs: "Heavy flow wall mounted ventilation fan for factories", price: 12500, image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&auto=format&fit=crop&q=60" },
+      { name: "Busbar Trunking System 800A", specs: "Copper sandwich busway power distribution lines", price: 15000, image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=400&auto=format&fit=crop&q=60" },
+      { name: "3-Phase Induction Motor 5HP", specs: "Standard high efficiency motor for conveyer belt systems", price: 45000, image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&auto=format&fit=crop&q=60" },
+      { name: "HT Drop Out Fuse Assembly", specs: "Substation protection fuse setup for 11kV overhead lines", price: 18000, image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=400&auto=format&fit=crop&q=60" },
+      { name: "Lightning Arrester (11kV)", specs: "Distribution surge diverter assembly for transformer safety", price: 12000, image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&auto=format&fit=crop&q=60" }
     ],
     unit: "Pcs",
     minQty: 2,
@@ -481,32 +565,40 @@ export default function Home() {
                 {CATEGORIES[activeCategory].products.map((prod, idx) => (
                   <div 
                     key={idx}
-                    className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition flex flex-col justify-between space-y-5"
+                    className="bg-white border border-slate-200 rounded-2xl p-4 shadow-sm hover:shadow-md transition flex flex-col justify-between space-y-4"
                   >
-                    <div className="space-y-2">
-                      <div className="flex justify-between items-start">
-                        <span className="px-2.5 py-0.5 rounded-full text-[10px] font-semibold bg-slate-100 text-slate-600">
+                    <div className="space-y-3">
+                      {/* Product Image */}
+                      {prod.image && (
+                        <img 
+                          src={prod.image} 
+                          alt={prod.name} 
+                          className="w-full h-36 object-cover rounded-xl border border-slate-100 bg-slate-50"
+                        />
+                      )}
+                      <div className="flex justify-between items-start pt-1">
+                        <span className="px-2 py-0.5 rounded-full text-[9px] font-semibold bg-slate-100 text-slate-600">
                           {activeCategory}
                         </span>
-                        <span className="text-[10px] text-slate-500 italic">
+                        <span className="text-[9px] text-slate-500 italic">
                           MOQ: {CATEGORIES[activeCategory].minQty} {CATEGORIES[activeCategory].unit}
                         </span>
                       </div>
-                      <h3 className="font-bold text-slate-900 text-sm">{prod.name}</h3>
-                      <p className="text-xs text-slate-500 leading-relaxed">{prod.specs}</p>
+                      <h3 className="font-bold text-slate-900 text-xs line-clamp-1">{prod.name}</h3>
+                      <p className="text-[11px] text-slate-550 leading-relaxed line-clamp-2">{prod.specs}</p>
                     </div>
 
-                    <div className="pt-4 border-t border-slate-100 flex items-center justify-between">
+                    <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
                       <div>
-                        <span className="block text-[10px] text-slate-400 uppercase font-semibold">Indicative Price</span>
-                        <strong className="text-sm font-extrabold text-slate-800">
+                        <span className="block text-[8px] text-slate-400 uppercase font-semibold">Indicative Price</span>
+                        <strong className="text-xs font-extrabold text-slate-800">
                           BDT {prod.price.toLocaleString()}
                         </strong>
-                        <span className="text-[10px] text-slate-500"> / {CATEGORIES[activeCategory].unit.slice(0, -1)}</span>
+                        <span className="text-[9px] text-slate-500"> / {CATEGORIES[activeCategory].unit.slice(0, -1)}</span>
                       </div>
                       <button
                         onClick={() => setShowAuthModal(true)}
-                        className="bg-indigo-50 hover:bg-indigo-100 text-indigo-700 text-xs font-bold py-2 px-4 rounded-xl transition"
+                        className="bg-indigo-50 hover:bg-indigo-100 text-indigo-700 text-[10px] font-bold py-1.5 px-3 rounded-lg transition"
                       >
                         Request Quote
                       </button>
