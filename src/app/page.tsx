@@ -931,6 +931,118 @@ export default function Home() {
                 </button>
               </div>
 
+              {/* Get Free Quotes from Multiple Sellers Widget Section */}
+              <div className="bg-white border border-slate-200 rounded-3xl p-8 sm:p-10 shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div className="lg:col-span-6 space-y-6">
+                  <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 leading-tight">
+                    একাধিক বিক্রেতার কাছ থেকে <span className="text-teal-650">ফ্রি কোটেশন</span> পান
+                  </h2>
+                  
+                  <div className="grid grid-cols-3 gap-4 pt-2">
+                    <div className="text-center space-y-2">
+                      <div className="w-12 h-12 rounded-full bg-slate-50 border border-slate-150 flex items-center justify-center mx-auto text-teal-600 shadow-sm">
+                        <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                        </svg>
+                      </div>
+                      <p className="text-[11px] font-bold text-slate-800 leading-tight">আপনার কি প্রয়োজন আমাদের বলুন</p>
+                    </div>
+
+                    <div className="text-center space-y-2">
+                      <div className="w-12 h-12 rounded-full bg-slate-50 border border-slate-150 flex items-center justify-center mx-auto text-teal-600 shadow-sm">
+                        <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                      </div>
+                      <p className="text-[11px] font-bold text-slate-800 leading-tight">বিক্রেতাদের থেকে ফ্রি কোটেশন পান</p>
+                    </div>
+
+                    <div className="text-center space-y-2">
+                      <div className="w-12 h-12 rounded-full bg-slate-50 border border-slate-150 flex items-center justify-center mx-auto text-teal-600 shadow-sm">
+                        <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                      </div>
+                      <p className="text-[11px] font-bold text-slate-800 leading-tight">সেরা ডিলটি চূড়ান্ত করুন</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="lg:col-span-6 bg-slate-50 border border-slate-150 rounded-2xl p-6 space-y-4">
+                  <h3 className="text-sm font-bold text-slate-850">আপনার চাহিদা আমাদের জানান</h3>
+                  
+                  <div className="space-y-3">
+                    <div>
+                      <input 
+                        type="text" 
+                        placeholder="পণ্য বা সেবার নাম লিখুন..." 
+                        className="w-full bg-white border border-slate-200 rounded-xl px-4 py-2.5 text-xs text-slate-800 focus:outline-none focus:border-teal-600 transition"
+                      />
+                    </div>
+                    
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                      <input 
+                        type="email" 
+                        placeholder="আপনার ইমেইল লিখুন" 
+                        className="w-full bg-white border border-slate-200 rounded-xl px-4 py-2.5 text-xs text-slate-800 focus:outline-none focus:border-teal-600 transition"
+                      />
+                      <input 
+                        type="text" 
+                        placeholder="আপনার নাম লিখুন" 
+                        className="w-full bg-white border border-slate-200 rounded-xl px-4 py-2.5 text-xs text-slate-800 focus:outline-none focus:border-teal-600 transition"
+                      />
+                    </div>
+
+                    <div className="flex items-center text-slate-500 text-[10px] space-x-1">
+                      <span className="text-slate-400">🌐</span>
+                      <span>আপনার দেশ হচ্ছে</span>
+                      <strong className="text-slate-700 font-bold">বাংলাদেশ</strong>
+                    </div>
+
+                    <button 
+                      onClick={() => setShowAuthModal(true)}
+                      className="w-full bg-teal-700 hover:bg-teal-850 text-white font-bold py-3 px-4 rounded-xl text-xs transition shadow-sm"
+                    >
+                      চাহিদা পত্র সাবমিট করুন
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              {/* Find Suppliers from Top Cities Section */}
+              <div className="bg-white border border-slate-200 rounded-3xl p-8 sm:p-10 shadow-sm space-y-8">
+                <div className="text-center sm:text-left space-y-2">
+                  <h2 className="text-xl sm:text-2xl font-bold text-slate-900">শীর্ষ শহরগুলো থেকে সাপ্লায়ার খুঁজুন</h2>
+                  <p className="text-xs text-slate-500">বাংলাদেশের প্রধান বাণিজ্যিক কেন্দ্রসমূহের ভেরিফাইড সাপ্লায়ার নেটওয়ার্ক</p>
+                </div>
+
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
+                  {[
+                    { name: "ঢাকা", icon: "🏢" },
+                    { name: "চট্টগ্রাম", icon: "⚓" },
+                    { name: "নারায়ণগঞ্জ", icon: "🏭" },
+                    { name: "গাজীপুর", icon: "🏗️" },
+                    { name: "সাভার", icon: "🌾" },
+                    { name: "খুলনা", icon: "🪵" },
+                    { name: "রাজশাহী", icon: "🥭" },
+                    { name: "সিলেট", icon: "🍃" },
+                    { name: "বগুড়া", icon: "⚙️" },
+                    { name: "কুমিল্লা", icon: "🏛️" }
+                  ].map((city, idx) => (
+                    <div 
+                      key={idx}
+                      onClick={() => setShowAuthModal(true)}
+                      className="group cursor-pointer bg-slate-50 hover:bg-white border border-slate-150 hover:border-indigo-200 rounded-2xl p-4 text-center transition-all duration-300 shadow-sm hover:shadow-md"
+                    >
+                      <div className="w-12 h-12 rounded-full bg-white group-hover:bg-indigo-50 border border-slate-150 group-hover:border-indigo-150 flex items-center justify-center text-lg mx-auto mb-2.5 transition shadow-sm">
+                        {city.icon}
+                      </div>
+                      <span className="text-xs font-bold text-slate-750 group-hover:text-indigo-650 transition">{city.name}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
             </div>
           ) : currentView === "client" ? (
             // CLIENT PORTAL VIEW
