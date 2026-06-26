@@ -21,6 +21,10 @@ const hindSiliguri = Hind_Siliguri({
 export const metadata: Metadata = {
   title: "The J Platform | B2B Industrial Commerce",
   description: "Aggregated raw material procurement, instant RFQs, and secure supply chain logistics.",
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function RootLayout({
