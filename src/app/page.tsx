@@ -445,6 +445,11 @@ export default function Home() {
   const [exportMobile, setExportMobile] = useState<string>("");
   const [exportNameSearch, setExportNameSearch] = useState<string>("");
 
+  // Guest RFQ Form State
+  const [guestRfqProduct, setGuestRfqProduct] = useState<string>("");
+  const [guestRfqEmail, setGuestRfqEmail] = useState<string>("");
+  const [guestRfqName, setGuestRfqName] = useState<string>("");
+
   // Helper: Trigger notification banner
   const triggerAlert = (msg: string) => {
     setNotification(msg);
@@ -535,6 +540,18 @@ export default function Home() {
     triggerAlert(`আপনার রপ্তানি ক্যোয়ারীটি সফলভাবে রেকর্ড করা হয়েছে! আমাদের এক্সপোর্ট কনসালটেন্ট দল শীঘ্রই আপনার সাথে যোগাযোগ করবে।`);
     setExportProductSearch("");
     setExportMobile("");
+  };
+
+  const handleGuestRfqSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!guestRfqProduct || !guestRfqEmail || !guestRfqName) {
+      triggerAlert("দয়া করে আরএফকিউ ফর্মের সব তথ্য পূরণ করুন।");
+      return;
+    }
+    triggerAlert(`ধন্যবাদ ${guestRfqName}! "${guestRfqProduct}" পণ্যের জন্য আপনার ফ্রি কোটেশনের আবেদন সফলভাবে গ্রহণ করা হয়েছে।`);
+    setGuestRfqProduct("");
+    setGuestRfqEmail("");
+    setGuestRfqName("");
   };
 
   return (
@@ -971,12 +988,15 @@ export default function Home() {
                 <div className="lg:col-span-6 bg-slate-50 border border-slate-150 rounded-2xl p-6 space-y-4">
                   <h3 className="text-sm font-bold text-slate-850">আপনার চাহিদা আমাদের জানান</h3>
                   
-                  <div className="space-y-3">
+                  <form onSubmit={handleGuestRfqSubmit} className="space-y-3">
                     <div>
                       <input 
                         type="text" 
                         placeholder="পণ্য বা সেবার নাম লিখুন..." 
+                        value={guestRfqProduct}
+                        onChange={(e) => setGuestRfqProduct(e.target.value)}
                         className="w-full bg-white border border-slate-200 rounded-xl px-4 py-2.5 text-xs text-slate-800 focus:outline-none focus:border-teal-600 transition"
+                        required
                       />
                     </div>
                     
@@ -984,12 +1004,18 @@ export default function Home() {
                       <input 
                         type="email" 
                         placeholder="আপনার ইমেইল লিখুন" 
+                        value={guestRfqEmail}
+                        onChange={(e) => setGuestRfqEmail(e.target.value)}
                         className="w-full bg-white border border-slate-200 rounded-xl px-4 py-2.5 text-xs text-slate-800 focus:outline-none focus:border-teal-600 transition"
+                        required
                       />
                       <input 
                         type="text" 
                         placeholder="আপনার নাম লিখুন" 
+                        value={guestRfqName}
+                        onChange={(e) => setGuestRfqName(e.target.value)}
                         className="w-full bg-white border border-slate-200 rounded-xl px-4 py-2.5 text-xs text-slate-800 focus:outline-none focus:border-teal-600 transition"
+                        required
                       />
                     </div>
 
@@ -1000,12 +1026,12 @@ export default function Home() {
                     </div>
 
                     <button 
-                      onClick={() => setShowAuthModal(true)}
+                      type="submit"
                       className="w-full bg-teal-700 hover:bg-teal-850 text-white font-bold py-3 px-4 rounded-xl text-xs transition shadow-sm"
                     >
                       চাহিদা পত্র সাবমিট করুন
                     </button>
-                  </div>
+                  </form>
                 </div>
               </div>
 
