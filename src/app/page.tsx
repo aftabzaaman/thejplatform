@@ -212,62 +212,62 @@ const CATEGORY_LABELS: Record<string, string> = {
 const EXPORT_CATEGORIES = [
   {
     title: "তৈরি পোশাক ও নিটওয়্যার",
-    image: "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?w=120&auto=format&fit=crop&q=60",
+    image: "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=120&auto=format&fit=crop&q=60",
     items: ["ওভেন শার্ট ও প্যান্ট", "টি-শার্ট ও পোলো শার্ট", "সোয়েটার ও নিটওয়্যার", "ডেনিম পোশাক", "বাচ্চাদের পোশাক"]
   },
   {
     title: "পাট ও পাটজাত পণ্য",
-    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=120&auto=format&fit=crop&q=60",
+    image: "https://images.unsplash.com/photo-1595246140625-568b29d01458?w=120&auto=format&fit=crop&q=60",
     items: ["কাঁচা পাট", "পাটের সুতা ও দড়ি", "পাটের শপিং ব্যাগ", "পাটের চট ও বস্তা", "পাটজাত হস্তশিল্প"]
   },
   {
     title: "চামড়া ও ফুটওয়্যার",
-    image: "https://images.unsplash.com/photo-1590069261209-f8e9b8642343?w=120&auto=format&fit=crop&q=60",
+    image: "https://images.unsplash.com/photo-1531310197839-ccf54664f2c5?w=120&auto=format&fit=crop&q=60",
     items: ["চামড়ার জুতো ও বুট", "চামড়ার জ্যাকেট", "চামড়ার ব্যাগ ও ওয়ালেট", "ফিনিশড ক্রাস্ট লেদার", "ট্রাভেল বেল্ট ও বেল্ট"]
   },
   {
     title: "হিমায়িত ও তাজা খাদ্য",
-    image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=120&auto=format&fit=crop&q=60",
+    image: "https://images.unsplash.com/photo-1534604973900-c43ab4c2e0ab?w=120&auto=format&fit=crop&q=60",
     items: ["গলদা ও বাগদা চিংড়ি", "হিমায়িত ইলিশ ও সামুদ্রিক মাছ", "হিমায়িত সবজি ও পরোটা", "শুঁটকি মাছ", "কাঁকড়া ও কুঁচে"]
   },
   {
     title: "কৃষি ও খাদ্য প্রক্রিয়া",
-    image: "https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?w=120&auto=format&fit=crop&q=60",
+    image: "https://images.unsplash.com/photo-1536630596251-b12e1180211a?w=120&auto=format&fit=crop&q=60",
     items: ["সুগন্ধি চিনিগুঁড়া চাল", "ব্ল্যাক টি ও চা পাতা", "আস্ত ও গুঁড়া মসলা", "হিমায়িত আলু ও টমেটো", "আম ও লিচুর জুস"]
   },
   {
     title: "ওষুধ ও ফার্মা প্রোডাক্টস",
-    image: "https://images.unsplash.com/photo-1603126857599-f6e157fa2fe6?w=120&auto=format&fit=crop&q=60",
+    image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=120&auto=format&fit=crop&q=60",
     items: ["ট্যাবলেট ও ক্যাপসুল", "ইনজেকশন ও ভ্যাকসিন", "লিকুইড সিরাপ ও সাসপেনশন", "ইনহেলার ও ওরাল স্যালাইন", "অ্যাক্টিভ ফার্মা ইনগ্রেডিয়েন্টস"]
   },
   {
     title: "প্লাস্টিক ও পলিমার সামগ্রী",
-    image: "https://images.unsplash.com/photo-1532187863486-abf9d39d66e8?w=120&auto=format&fit=crop&q=60",
+    image: "https://images.unsplash.com/photo-1569003339405-ea396a5a8a90?w=120&auto=format&fit=crop&q=60",
     items: ["প্লাস্টিকের খেলনা", "প্লাস্টিক হ্যাঙ্গার ও পিন", "পিভিসি পাইপ ও ফিটিংস", "গৃহস্থালি প্লাস্টিক পণ্য", "প্যাকেজিং ফিল্ম"]
   },
   {
     title: "সিরামিক ও টেবিলওয়্যার",
-    image: "https://images.unsplash.com/photo-1595079676339-1534801ad6cf?w=120&auto=format&fit=crop&q=60",
+    image: "https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=120&auto=format&fit=crop&q=60",
     items: ["সিরামিক প্লেট ও বাটি", "পোর্সেলিন ডিনার সেট", "সিরামিক কাপ ও মগ", "মেঝে ও দেয়ালের টাইলস", "স্যানিটারি ওয়্যার"]
   },
   {
     title: "হ্যান্ডলুম ও হস্তশিল্প",
-    image: "https://images.unsplash.com/photo-1512909006721-3d6018887383?w=120&auto=format&fit=crop&q=60",
+    image: "https://images.unsplash.com/photo-1606744824163-985d376605aa?w=120&auto=format&fit=crop&q=60",
     items: ["ঐতিহ্যবাহী জামদানি শাড়ি", "নকশিকাঁথা ও বেডশীট", "বাঁশ ও বেতের আসবাব", "টেরাকোটা ও মাটির পাত্র", "কাঠের তৈরি শোপিস"]
   },
   {
     title: "জাহাজ ও জলযান নির্মাণ",
-    image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=120&auto=format&fit=crop&q=60",
+    image: "https://images.unsplash.com/photo-1505705694340-019e1e335916?w=120&auto=format&fit=crop&q=60",
     items: ["মালবাহী কার্গো ভেসেল", "খনন ড্রেজার জাহাজ", "টাগবোট ও স্পিডবোট", "প্যাট্রোল ভেসেল", "ফেরি ও লঞ্চ"]
   },
   {
     title: "তথ্য প্রযুক্তি ও সফটওয়্যার",
-    image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=120&auto=format&fit=crop&q=60",
+    image: "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?w=120&auto=format&fit=crop&q=60",
     items: ["কাস্টম সফটওয়্যার", "মোবাইল অ্যাপ্লিকেশন", "ওয়েব পোর্টাল ডেভেলপমেন্ট", "ডাটা এন্ট্রি ও প্রসেসিং", "আইটি কনসালটেন্সি"]
   },
   {
     title: "রাসায়নিক ও রঞ্জক পদার্থ",
-    image: "https://images.unsplash.com/photo-1603126857599-f6e157fa2fe6?w=120&auto=format&fit=crop&q=60",
+    image: "https://images.unsplash.com/photo-1576086213369-97a306d36557?w=120&auto=format&fit=crop&q=60",
     items: ["হাইড্রোজেন পারক্সাইড", "টেক্সটাইল ওয়াশ কেমিক্যাল", "ইউরিয়া ও রাসায়নিক সার", "পেইন্টস ও বার্নিশ", "ওয়াটার ট্রিটমেন্ট কেমিক্যাল"]
   },
   {
@@ -277,87 +277,87 @@ const EXPORT_CATEGORIES = [
   },
   {
     title: "আসবাবপত্র ও হোম ডেকর",
-    image: "https://images.unsplash.com/photo-1512909006721-3d6018887383?w=120&auto=format&fit=crop&q=60",
+    image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=120&auto=format&fit=crop&q=60",
     items: ["সেগুন কাঠের খাট", "কাঠের ডাইনিং টেবিল", "সোফা ও কুশন সেট", "অফিস কেবিন ফার্নিচার", "ডেকোরেটিভ ওয়াল প্যানেল"]
   },
   {
     title: "হোম টেক্সটাইল ও লিনেন",
-    image: "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?w=120&auto=format&fit=crop&q=60",
+    image: "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=120&auto=format&fit=crop&q=60",
     items: ["বিছানার চাদর ও কভার", "সোফার কভার ও পর্দা", "বাথরুমের তোয়ালে", "টেবিল ক্লথ ও ন্যাপকিন", "রান্নাঘরের গ্লাভস ও অ্যাপ্রন"]
   },
   {
     title: "বৈদ্যুতিক ও সাবস্টেশন",
-    image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=120&auto=format&fit=crop&q=60",
+    image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=120&auto=format&fit=crop&q=60",
     items: ["ডিস্ট্রিবিউশন ট্রান্সফরমার", "এইচটি ও এলটি প্যানেল", "কপার পাওয়ার ক্যাবল", "পিএফআই ক্যাপাসিটর প্ল্যান্ট", "স্মার্ট এনার্জি মিটার"]
   },
   {
     title: "হালকা প্রকৌশল ও মেটাল",
-    image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=120&auto=format&fit=crop&q=60",
+    image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=120&auto=format&fit=crop&q=60",
     items: ["বাইসাইকেল ও স্পেয়ার পার্টস", "মেটাল নাট-বোল্ট ও ফাস্টেনার", "কৃষি যন্ত্রপাতি ও লাঙল", "মেটাল ক্যাবল ট্রে", "মেশিনারি স্পেয়ার পার্টস"]
   },
   {
     title: "সিমেন্ট ও বিল্ডিং ক্লিংকার",
-    image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=120&auto=format&fit=crop&q=60",
+    image: "https://images.unsplash.com/photo-1581094288338-2314dddb7ecc?w=120&auto=format&fit=crop&q=60",
     items: ["পোর্টল্যান্ড সিমেন্ট (OPC)", "কম্পোজিট সিমেন্ট (PCC)", "কাঁচা জিপসাম পাথর", "লাইমস্টোন চুনাপাথর", "ফ্লাই-অ্যাশ পাউডার"]
   },
   {
     title: "কয়লা ও খনিজ সম্পদ",
-    image: "https://images.unsplash.com/photo-1590069261209-f8e9b8642343?w=120&auto=format&fit=crop&q=60",
+    image: "https://images.unsplash.com/photo-1605557626697-2e87166d88f9?w=120&auto=format&fit=crop&q=60",
     items: ["সিলিকা স্যান্ড (বালি)", "গ্রানাইট ও মার্বেল পাথর", "চায়না ক্লে (সাদা মাটি)", "কয়লা ও খনিজ কাঠ", "কোয়ার্টজ পাথর"]
   },
   {
     title: "মেডিকেল ও সার্জিক্যাল",
-    image: "https://images.unsplash.com/photo-1603126857599-f6e157fa2fe6?w=120&auto=format&fit=crop&q=60",
+    image: "https://images.unsplash.com/photo-1583947581924-860bda6a26df?w=120&auto=format&fit=crop&q=60",
     items: ["ডিসপোজেবল প্লাস্টিক সিরিঞ্জ", "সার্জিক্যাল গজ ও ব্যান্ডেজ", "সার্জিক্যাল ফেস মাস্ক", "পরীক্ষামূলক রাবার গ্লাভস", "আইভি ক্যানুলা ও ক্যাথেটার"]
   },
   {
     title: "ফাইন আর্টস ও ফটোগ্রাফি",
-    image: "https://images.unsplash.com/photo-1512909006721-3d6018887383?w=120&auto=format&fit=crop&q=60",
+    image: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=120&auto=format&fit=crop&q=60",
     items: ["হস্তনির্মিত ক্যানভাস পেইন্টিং", "কাঠের খোদাইকৃত ভাস্কর্য", "ধাতব ওয়াল আর্ট", "ডিজিটাল আর্ট প্রিন্ট", "ফটোগ্রাফি ফ্রেমেড পিকচার"]
   },
   {
     title: "মোটরগাড়ি ও যন্ত্রাংশ",
-    image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=120&auto=format&fit=crop&q=60",
+    image: "https://images.unsplash.com/photo-1486006920555-c77dce18193b?w=120&auto=format&fit=crop&q=60",
     items: ["রিকশা ও সাইকেল হুব", "১২V মোটরগাড়ি ব্যাটারি", "ব্রেক শু ও প্যাড", "লুব্রিকেন্ট অয়েল ফিল্টার", "টায়ার ও রাবার টিউব"]
   },
   {
     title: "ক্রীড়া সামগ্রী ও পোশাক",
-    image: "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?w=120&auto=format&fit=crop&q=60",
+    image: "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=120&auto=format&fit=crop&q=60",
     items: ["চামড়ার ফুটবল ও ভলিবল", "উড ক্রিকেট ব্যাট", "স্পোর্টস টিম জার্সি", "পলিয়েস্টার ট্র্যাকস্যুট", "উইকেট কিপিং গ্লাভস"]
   },
   {
     title: "কসমেটিকস ও টয়লেট্রিজ",
-    image: "https://images.unsplash.com/photo-1532187863486-abf9d39d66e8?w=120&auto=format&fit=crop&q=60",
+    image: "https://images.unsplash.com/photo-1608248597481-496100c80836?w=120&auto=format&fit=crop&q=60",
     items: ["নিম ও ভেষজ সাবান", "নারকেল ও ভেষজ চুলের তেল", "অর্গানিক ফেসওয়াশ", "মেকআপ বিউটি কিটস", "অ্যান্টিব্যাকটেরিয়াল হ্যান্ডওয়াশ"]
   },
   {
     title: "গহনা ও ফ্যাশন এক্সেসরিজ",
-    image: "https://images.unsplash.com/photo-1512909006721-3d6018887383?w=120&auto=format&fit=crop&q=60",
+    image: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=120&auto=format&fit=crop&q=60",
     items: ["খাঁটি মুক্তার গহনা", "রুপার আংটি ও ব্রেসলেট", "ইমিটেশন কানের দুল", "পুঁতির নকশা করা মালা", "মেটাল বাধন বেল্ট"]
   },
   {
     title: "অফিস ও স্টেশনারি সামগ্রী",
-    image: "https://images.unsplash.com/photo-1595079676339-1534801ad6cf?w=120&auto=format&fit=crop&q=60",
+    image: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=120&auto=format&fit=crop&q=60",
     items: ["কাগজের খাতা ও নোটবুক", "প্লাস্টিক ডিসপ্লে ফাইল", "বলপয়েন্ট কলম ও পেন্সিল", "বৈজ্ঞানিক ক্যালকুলেটর", "ধাতব পেপার ক্লিপ ও পিন"]
   },
   {
     title: "খেলনা ও বিনোদন সামগ্রী",
-    image: "https://images.unsplash.com/photo-1512909006721-3d6018887383?w=120&auto=format&fit=crop&q=60",
+    image: "https://images.unsplash.com/photo-1558060370-d644479cb6f7?w=120&auto=format&fit=crop&q=60",
     items: ["কাঠের শিক্ষামূলক খেলনা", "তুলতুলে স্টাফড টেডি বিয়ার", "প্লাস্টিক বিল্ডিং ব্লক", "পারিবারিক বোর্ড গেম", "পাজল কার্ড সেট"]
   },
   {
     title: "অপটিক্যাল ও কাচের সামগ্রী",
-    image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=120&auto=format&fit=crop&q=60",
+    image: "https://images.unsplash.com/photo-1577803645773-f96470509666?w=120&auto=format&fit=crop&q=60",
     items: ["চশমার প্লাস্টিক ফ্রেম", "কাচের বোতল ও ফুড জার", "লেন্স ক্লিন পরিচ্ছন্ন সলিউশন", "মিরর কাচ শিট", "নকশা করা রঙিন কাচ"]
   },
   {
     title: "নিরাপত্তা ও সেফটি ইকুইপমেন্ট",
-    image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=120&auto=format&fit=crop&q=60",
+    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=120&auto=format&fit=crop&q=60",
     items: ["ইন্ডাস্ট্রিয়াল সেফটি হেলমেট", "স্টিল টো জুতো ও গ্লাভস", "উচ্চ দৃশ্যমান প্রতিফলিত ভেস্ট", "অগ্নি নির্বাপক সিলিন্ডার", "সেফটি হারনেস বেল্ট"]
   },
   {
     title: "সামুদ্রিক পণ্য ও শৈবাল",
-    image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=120&auto=format&fit=crop&q=60",
+    image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=120&auto=format&fit=crop&q=60",
     items: ["কাঁচা ও হিমায়িত কাঁকড়া", "শুকনো সামুদ্রিক শৈবাল", "তাজা কোরাল ও ভেটকি মাছ", "কচ্ছপের আলংকারিক খোলস", "কুঁচে মাছ (পাইকারি লট)"]
   }
 ];
